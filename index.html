@@ -18,7 +18,12 @@ button,input{font:inherit}.app{display:flex;min-height:100vh}
 .nav{display:flex;flex-direction:column;gap:7px}.nav button{border:0;background:transparent;text-align:left;padding:13px 14px;border-radius:11px;color:#596174;cursor:pointer}
 .nav button.active,.nav button:hover{background:#f0ecff;color:var(--primary);font-weight:700}
 .help{position:absolute;bottom:22px;left:16px;right:16px;background:#f7f4ff;border-radius:14px;padding:15px;font-size:13px;color:#62568c}
-.main{margin-left:245px;width:calc(100% - 245px);padding:25px 34px}
+.main{
+  margin-left: 245px;
+  flex-grow: 1;
+  min-width: 0;
+  padding: 25px 34px;
+}
 .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
 .search{width:330px;background:white;border:1px solid var(--line);border-radius:11px;padding:11px 14px;outline:none}
 .profile{display:flex;align-items:center;gap:11px}.avatar{width:40px;height:40px;border-radius:50%;background:#eadfff;display:grid;place-items:center;color:#6845dc;font-weight:800}
